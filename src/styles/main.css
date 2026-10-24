@@ -1,0 +1,49 @@
+/* Phase 0 placeholder styles. The full Neo-pop design arrives in Phase 1. */
+:root {
+  --paper: #fffdf7;
+  --ink: #111111;
+  --brand: #6b4bff;
+  --on-brand: #ffffff;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #16131f;
+    --ink: #f4f0e6;
+    --brand: #8d75ff;
+    --on-brand: #111111;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 16px;
+}
+
+.placeholder h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.logo-block {
+  display: inline-block;
+  background: var(--brand);
+  color: var(--on-brand);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--ink);
+  padding: 0 0.25em;
+  margin-right: 0.2em;
+}

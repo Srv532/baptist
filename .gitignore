@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+# Engine files are copied from node_modules at build time (see spec A2).
+public/engines/

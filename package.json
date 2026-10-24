@@ -1,0 +1,30 @@
+{
+  "name": "baptist",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Convert any file, right in your browser.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "gen:headers": "node scripts/gen-headers.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "eslint": "10.11.0",
+    "globals": "17.12.0",
+    "prettier": "3.9.9",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}

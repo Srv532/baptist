@@ -1,0 +1,8 @@
+dist/
+coverage/
+test-results/
+playwright-report/
+public/engines/
+package-lock.json
+Baptist_Development_Plan_Prompt.md
+docs/
