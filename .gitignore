@@ -1,7 +1,116 @@
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
+.yarn/
+.pnpm-store/
+jspm_packages/
+bower_components/
+
+# Build output
 dist/
-coverage/
-test-results/
-playwright-report/
+dist-ssr/
+build/
+out/
+.output/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
 # Engine files are copied from node_modules at build time (see spec A2).
 public/engines/
+
+# Tests / coverage
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+.secrets/
+
+# Vercel / deploy tooling
+.vercel/
+.netlify/
+.firebase/
+.wrangler/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime / temp
+pids/
+*.pid
+*.seed
+*.pid.lock
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+*.rej
+
+# Package manager leftovers
+*.tgz
+.npm/
+.node_repl_history
+
+# Editors / IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+.history/
+
+# OS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Local AI tooling
+
+# Large local media samples (processed in-browser, never committed)
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.flac
+*.wav
+*.mp3
+*.aac
+*.zip
+!tests/fixtures/**
