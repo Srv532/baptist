@@ -16,15 +16,35 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "lint": "eslint . && prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predev": "node scripts/copy-engines.js",
+    "prebuild": "node scripts/copy-engines.js"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
     "@playwright/test": "1.63.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "autoprefixer": "10.6.1",
     "eslint": "10.11.0",
     "globals": "17.12.0",
+    "javascript-obfuscator": "5.9.0",
+    "postcss": "8.5.31",
     "prettier": "3.9.9",
-    "vite": "8.3.1",
-    "vitest": "5.0.2"
+    "tailwindcss": "3.4.19",
+    "vite": "5.4.21",
+    "vite-plugin-javascript-obfuscator": "3.1.0",
+    "vitest": "2.1.9"
+  },
+  "dependencies": {
+    "@ffmpeg/core-mt": "0.12.10",
+    "@ffmpeg/ffmpeg": "0.12.15",
+    "@ffmpeg/util": "0.12.2",
+    "clsx": "2.1.1",
+    "fflate": "0.8.3",
+    "framer-motion": "11.18.2",
+    "lucide-react": "1.61.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "3.7.0"
   }
 }
